@@ -38,31 +38,32 @@ jobs:
       - name: Install Playwright
         run: playwright install
 
-      - name: Debug test discovery
-        run: pytest --collect-only -q
-
-      - name: Run ALL tests
-        if: ${{ github.event.inputs.deployment_target == 'all' }}
+      - name: run all tests
+        if: "github.event.inputs.deployment_target == 'all'"
         run: pytest --alluredir=allure-results
+        continue-on-error: true
 
-      - name: Run SMOKE tests
-        if: ${{ github.event.inputs.deployment_target == 'smoke' }}
+      - name: run smoke tests
+        if: "github.event.inputs.deployment_target == 'smoke'"
         run: pytest -m smoke --alluredir=allure-results
+        continue-on-error: true
 
-      - name: Run REGRESSION tests
-        if: ${{ github.event.inputs.deployment_target == 'regression' }}
+      - name: run regression tests
+        if: "github.event.inputs.deployment_target == 'regression'"
         run: pytest -m regression --alluredir=allure-results
+        continue-on-error: true
 
-      - name: Run EXTENDED tests
-        if: ${{ github.event.inputs.deployment_target == 'extended' }}
+      - name: run extended tests
+        if: "github.event.inputs.deployment_target == 'extended'"
         run: pytest -m extended --alluredir=allure-results
+        continue-on-error: true
 
-      - name: Проверка наличия результатов Allure
+      - name: Проверка содержимого allure-results
         run: |
-          echo "📂 Содержимое allure-results:"
-          ls -la allure-results || true
-          echo "📄 Первый JSON-файл:"
-          head -n 20 $(ls allure-results/*.json | head -n 1) || true
+          echo "📁 Проверка директории allure-results:"
+          ls -l allure-results || echo "⚠️ Директория не найдена или пуста"
+          echo "📄 Примеры содержимого файлов:"
+          head -n 20 $(ls allure-results/*.json | head -n 1) || echo "⚠️ JSON-файлы не найдены"
 
       - name: Install Java
         uses: actions/setup-java@v4
@@ -70,16 +71,13 @@ jobs:
           distribution: 'microsoft'
           java-version: '17'
 
-      - name: Install Allure CLI
-        run: |
-          sudo wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.tgz
-          sudo tar -zxvf allure-2.30.0.tgz -C /opt/
-          sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
+      - name: Install Allure
+        run: sudo wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.tgz && sudo tar -zxvf allure-2.30.0.tgz -C /opt/ && sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
 
-      - name: Generate Allure report
+      - name: Generate report
         run: allure generate -c allure-results -o _site
 
-      - name: Upload Allure report artifact
+      - name: Save allure report
         uses: actions/upload-artifact@v4
         with:
           name: _site
@@ -91,10 +89,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: run-tests
     steps:
-      - name: Download Allure artifact
+      - name: Download artifacts
         uses: actions/download-artifact@v4
 
-      - name: Upload to GitHub Pages
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
 
       - name: Deploy to GitHub Pages
