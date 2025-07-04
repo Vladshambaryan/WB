@@ -14,7 +14,6 @@ on:
           - regression
           - extended
           
-          
 permissions:
   contents: read
   pages: write
@@ -27,16 +26,28 @@ jobs:
     steps:
       - name: Checkout autotests
         uses: actions/checkout@v4
+
       - name: Set up Python environment
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+
       - name: Install dependencies.
         run: pip install -r requirements.txt
 
       - name: Install Playwright
         run: playwright install   
-        
+
+      - name: Check tests directory content
+        run: |
+          echo "Listing files in tests directory:"
+          ls -la tests
+
+      - name: Show cookie file content
+        run: |
+          echo "Content of cookie file wb_auth_state.json:"
+          cat tests/wb_auth_state.json
+
       - name: run all tests
         if: "github.event.inputs.deployment_target == 'all'"
         run: pytest --alluredir=allure-results
@@ -64,7 +75,11 @@ jobs:
           java-version: '17'
           
       - name: Install Allure
-        run: sudo wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.tgz && sudo tar -zxvf allure-2.30.0.tgz -C /opt/ && sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
+        run: |
+          sudo wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.tgz
+          sudo tar -zxvf allure-2.30.0.tgz -C /opt/
+          sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
+
       - name: Generate report
         run: allure generate -c allure-results -o _site
         
