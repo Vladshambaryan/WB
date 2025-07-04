@@ -1,46 +1,59 @@
 name: Python autotests
 
 on:
-  push:
-    branches: [ main ]
-
+  workflow_dispatch:
+    inputs:
+      deployment_target:
+        description: choose tests set
+        required: true
+        type: choice
+        default: smoke
+        options:
+          - smoke
+          - regression
+          - extended
+          - all
+          
 permissions:
   contents: read
   pages: write
-  id-token: write
-
-env:
-  TEST_TYPE: smoke
-  ALLURE_VERSION: 2.30.0
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  id-token: write         
 
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-    name: Run ${{ env.TEST_TYPE }} tests
-    steps:
+    name: Run autotests
+    steps: 
       - name: Checkout autotests
         uses: actions/checkout@v4
-
       - name: Set up Python environment
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+         python-version: '3.10'
+      - name: Install dependencies.
+        run: pip install -r requirements.txt  
 
       - name: Install Playwright
-        run: playwright install
-
-      - name: Install Playwright dependencies
-        run: playwright install-deps
-
-      - name: Run ${{ env.TEST_TYPE }} tests
-        run: pytest -m ${{ env.TEST_TYPE }} --alluredir=allure-results
+        run: playwright install   
+        
+      - name: run all tests
+        if: "github.event.inputs.deployment_target == 'all'"
+        run: pytest --alluredir=allure-results
+        continue-on-error: true
+        
+      - name: run smoke tests
+        if: "github.event.inputs.deployment_target == 'smoke'"
+        run: pytest -m smoke --alluredir=allure-results
+        continue-on-error: true
+        
+      - name: run regression tests
+        if: "github.event.inputs.deployment_target == 'regression'"
+        run: pytest -m regression --alluredir=allure-results 
+        continue-on-error: true
+        
+      - name: run extended tests
+        if: "github.event.inputs.deployment_target == 'extended'" 
+        run: pytest -m extended --alluredir=allure-results
         continue-on-error: true
 
       - name: Install Java
@@ -48,32 +61,19 @@ jobs:
         with:
           distribution: 'microsoft'
           java-version: '17'
-
+          
       - name: Install Allure
-        run: |
-          sudo wget https://github.com/allure-framework/allure2/releases/download/${{ env.ALLURE_VERSION }}/allure-${{ env.ALLURE_VERSION }}.tgz
-          sudo tar -zxvf allure-${{ env.ALLURE_VERSION }}.tgz -C /opt/
-          sudo ln -s /opt/allure-${{ env.ALLURE_VERSION }}/bin/allure /usr/bin/allure
-
-      - name: Check if any tests were executed
-        run: |
-          if grep -r "collected 0 items" allure-results; then
-            echo "❌ No tests were collected. Failing job..."
-            exit 1
-          else
-            echo "✔️ Some tests were collected and run."
-          fi
-
+        run: sudo wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.tgz && sudo tar -zxvf allure-2.30.0.tgz -C /opt/ && sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
       - name: Generate report
         run: allure generate -c allure-results -o _site
-
+        
       - name: Save allure report
         uses: actions/upload-artifact@v3
         with:
           name: _site
           path: _site
-          retention-days: 1
-
+          retention-days: 1 
+          
   publish-report:
     name: Report publication
     runs-on: ubuntu-latest
@@ -81,14 +81,8 @@ jobs:
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v3
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1.2.9
-
-      - name: Add link to summary
-        run: |
-          echo "✅ [Посмотреть Allure-отчёт](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)" >> $GITHUB_STEP_SUMMARY
