@@ -1,35 +1,26 @@
 name: Python autotests
 
 on:
-  workflow_dispatch:
-    inputs:
-      deployment_target:
-        description: choose tests set
-        required: true
-        type: choice
-        default: smoke
-        options:
-          - smoke
-          - regression
-          - extended
-          - all
+  push:
+    branches: [ main ]
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+env:
+  TEST_TYPE: smoke
+  ALLURE_VERSION: 2.30.0
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
-env:
-  ALLURE_VERSION: 2.30.0
-
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-    name: Run autotests
+    name: Run ${{ env.TEST_TYPE }} tests
     steps:
       - name: Checkout autotests
         uses: actions/checkout@v4
@@ -48,24 +39,8 @@ jobs:
       - name: Install Playwright dependencies
         run: playwright install-deps
 
-      - name: Run all tests
-        if: github.event.inputs.deployment_target == 'all'
-        run: pytest --alluredir=allure-results
-        continue-on-error: true
-
-      - name: Run smoke tests
-        if: github.event.inputs.deployment_target == 'smoke'
-        run: pytest -m smoke --alluredir=allure-results
-        continue-on-error: true
-
-      - name: Run regression tests
-        if: github.event.inputs.deployment_target == 'regression'
-        run: pytest -m regression --alluredir=allure-results
-        continue-on-error: true
-
-      - name: Run extended tests
-        if: github.event.inputs.deployment_target == 'extended'
-        run: pytest -m extended --alluredir=allure-results
+      - name: Run ${{ env.TEST_TYPE }} tests
+        run: pytest -m ${{ env.TEST_TYPE }} --alluredir=allure-results
         continue-on-error: true
 
       - name: Install Java
