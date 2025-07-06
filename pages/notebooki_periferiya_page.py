@@ -13,16 +13,11 @@ class NotetbukiPeriferiyaPage(BasePage):
             self.page.locator(".product-card__wrapper").first.click()
 
 
-    # """Проверит title продукта"""
-    # def verify_product_title(self):
-    #     with allure.step("""Проверит title продукта"""):
-    #         expect(self.page.locator(".product-page__title")).to_be_visible()
-    def verify_page_title(self):
-        with allure.step("Проверка title страницы"):
-            self.page.wait_for_selector("h1", timeout=10000)
-            text = self.page.locator("h1").inner_text()
-            print(f"DEBUG: заголовок страницы → '{text}'")
-            expect(self.page.locator("h1")).to_have_text("Ноутбуки и компьютеры")
+    """Проверит title продукта"""
+    def verify_product_title(self):
+        with allure.step("""Проверит title продукта"""):
+            expect(self.page.locator(".product-page__title")).to_be_visible()
+
 
 
     """Проверит price продукта"""

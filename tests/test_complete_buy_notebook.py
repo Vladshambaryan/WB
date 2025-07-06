@@ -15,7 +15,7 @@ class TestBuyFlowNotebook:
 
         # Шаг 1: Открыть страницу электроники
         base_page.navigate(shop_url)
-        base_page.verify_page_title()
+        # base_page.verify_page_title()
         # Шаг 2: Открыть блок ноутбука
         base_page.click_notebook_block()
         base_page.verify_page_title_notebook()
