@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e90463bc-38cd-4ffe-9b42-f709d5bf3f3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/buy_several_products_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/notebooki_periferiya_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_buy_several_products.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_complete_buy_notebook.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/run_tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/run_tests.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_complete_buy_notebook.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/wb_auth_state.json" beforeDir="false" afterPath="$PROJECT_DIR$/wb_auth_state.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,41 +49,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for ccc.test_open_account_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for ccc.test_open_wildberries_logged_in.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for conftest.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for rdtrf.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_complete_buy_notebook.TestBuyFlowNotebook.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_complete_buy_notebook.test_buy_notebook.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_complete_buy_notebook.test_click_notebook_block.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_complete_buy_notebook.test_navigate.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.test_negative_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in ccc.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in rdtrf.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_add.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_complete_buy_notebook.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_delete.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_negativ_test.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python._add (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python._add.executor&quot;: &quot;Run&quot;,
-    &quot;Python.conftest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.delete (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.delete.executor&quot;: &quot;Run&quot;,
-    &quot;Python.jjj.executor&quot;: &quot;Run&quot;,
-    &quot;Python.jjjjj.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rdtrf.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_complete_buy_notebook.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/PycharmProjects/API_Test_Project&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for ccc.test_open_account_page.executor": "Run",
+    "Python tests.Python tests for ccc.test_open_wildberries_logged_in.executor": "Run",
+    "Python tests.Python tests for conftest.test.executor": "Run",
+    "Python tests.Python tests for rdtrf.test.executor": "Run",
+    "Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.executor": "Run",
+    "Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products.executor": "Run",
+    "Python tests.Python tests for test_complete_buy_notebook.TestBuyFlowNotebook.executor": "Run",
+    "Python tests.Python tests for test_complete_buy_notebook.test_buy_notebook.executor": "Run",
+    "Python tests.Python tests for test_complete_buy_notebook.test_click_notebook_block.executor": "Run",
+    "Python tests.Python tests for test_complete_buy_notebook.test_navigate.executor": "Run",
+    "Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.executor": "Run",
+    "Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.test_negative_test.executor": "Run",
+    "Python tests.Python tests in ccc.py.executor": "Run",
+    "Python tests.Python tests in rdtrf.py.executor": "Run",
+    "Python tests.Python tests in test_add.py.executor": "Run",
+    "Python tests.Python tests in test_complete_buy_notebook.py.executor": "Run",
+    "Python tests.Python tests in test_delete.py.executor": "Run",
+    "Python tests.Python tests in test_negativ_test.py.executor": "Run",
+    "Python tests.pytest for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products.executor": "Run",
+    "Python tests.pytest for test_complete_buy_notebook.TestBuyFlowNotebook.executor": "Run",
+    "Python._add (1).executor": "Run",
+    "Python._add.executor": "Run",
+    "Python.conftest.executor": "Run",
+    "Python.delete (1).executor": "Run",
+    "Python.delete.executor": "Run",
+    "Python.jjj.executor": "Run",
+    "Python.jjjjj.executor": "Run",
+    "Python.rdtrf.executor": "Run",
+    "Python.test_complete_buy_notebook.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/PC/PycharmProjects/API_Test_Project",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\PC\PycharmProjects\WB" />
@@ -109,7 +93,7 @@
       <recent name="C:\Users\PC\PycharmProjects\WB\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts">
+  <component name="RunManager" selected="Python tests.pytest for test_complete_buy_notebook.TestBuyFlowNotebook">
     <configuration name="Python tests for test_buy_several_products.TestBuySeveralProducts" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WB" />
       <option name="ENV_FILES" value="" />
@@ -206,8 +190,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts" />
         <item itemvalue="Python tests.pytest for test_complete_buy_notebook.TestBuyFlowNotebook" />
+        <item itemvalue="Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts" />
         <item itemvalue="Python tests.pytest for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products" />
         <item itemvalue="Python tests.Python tests for test_complete_buy_notebook.test_buy_notebook" />
         <item itemvalue="Python tests.Python tests in C:/Users/PC/PycharmProjects/WB/test_complete_buy_notebook.py" />
