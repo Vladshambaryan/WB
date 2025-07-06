@@ -33,7 +33,7 @@ class TestBuySeveralProducts:
         # Шаг 4: Перейти в корзину и проверить адрес кнопку заказа
         buy_several_products_page.click_cart_icon()
         notebuki_periferiya_page.verify_order_button()
-        notebuki_periferiya_page.verify_delivery_address()
+        #notebuki_periferiya_page.verify_delivery_address() # для авторизованых пользователей
 
         buy_several_products_page.change_product_count()
         # Шаг 5: Удалить продукт из корзины и проверить что пусто

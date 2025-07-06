@@ -17,7 +17,8 @@ def browser():
 """Фикстура для страницы на уровне теста"""
 @pytest.fixture
 def page(browser):
-    context = browser.new_context(storage_state="wb_auth_state.json")
+    # context = browser.new_context(storage_state="wb_auth_state.json")
+    context = browser.new_context()
     page = context.new_page()
     yield page
     context.close()

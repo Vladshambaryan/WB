@@ -35,7 +35,7 @@ class TestBuyFlowNotebook:
         notebuki_periferiya_page.click_go_to_cart_button()
         notebuki_periferiya_page.verify_product_count_in_cart()
         notebuki_periferiya_page.verify_order_button()
-        notebuki_periferiya_page.verify_delivery_address()
+        # notebuki_periferiya_page.verify_delivery_address() # для авторизованых пользователей
         # Шаг 6: Удалить продукт из корзины и проверить что пусто
         notebuki_periferiya_page.remove_from_cart()
         notebuki_periferiya_page.verify_pop_up_message_delete()
