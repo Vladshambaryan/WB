@@ -8,8 +8,24 @@ def browser():
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=False,
-            slow_mo=1000 # Можно настроить скорость
+            args=[
+                "--window-size=1920,1080",
+                "--start-maximized",
+                "--disable-blink-features=AutomationControlled",
+                "--disable-infobars"
+            ]
         )
+        context = browser.new_context(
+            viewport={"width": 1920, "height": 1080},
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+            locale="ru-RU",
+            timezone_id="Europe/Moscow",
+            ignore_https_errors=True,
+            permissions=["geolocation"],
+            geolocation={"latitude": 55.75, "longitude": 37.61},
+            color_scheme="light"
+        )
+        page = context.new_page()
         yield browser
         browser.close()
 
