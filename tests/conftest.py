@@ -30,6 +30,7 @@ def browser():
         browser.close()
 
 
+
 """Фикстура для страницы на уровне теста"""
 @pytest.fixture
 def page(browser):
