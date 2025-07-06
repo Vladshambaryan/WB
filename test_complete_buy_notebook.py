@@ -6,19 +6,18 @@ from selenium.webdriver.edge.options import Options
 import tempfile
 
 
-@pytest.fixture
-def driver():
-    # Создаём уникальную временную директорию для user data
-    temp_profile = tempfile.mkdtemp()
-    options = Options()
-    options.add_argument(f"--user-data-dir={temp_profile}")  # избегаем конфликта в CI
-    # options.add_argument("--headless")  # опционально: headless-режим для CI
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")
 
+
+@pytest.fixture()
+def driver():
+    options = Options()
+    # options.add_argument('--no-sandbox')
+    # options.add_argument('--disable-dev-shm-usage')
+    #options.add_argument("--headless")
     driver = webdriver.Edge(options=options)
-    yield driver
-    driver.quit()
+    driver.maximize_window()
+    driver.implicitly_wait(7)
+    return driver
 
 
 def test_buy_notebook(driver):
