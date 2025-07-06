@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e90463bc-38cd-4ffe-9b42-f709d5bf3f3a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e90463bc-38cd-4ffe-9b42-f709d5bf3f3a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +86,7 @@
       <recent name="C:\Users\PC\PycharmProjects\WB\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_complete_buy_notebook">
+  <component name="RunManager" selected="Python tests.Python tests for test_complete_buy_notebook.test_buy_notebook">
     <configuration name="test_complete_buy_notebook" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WB" />
       <option name="ENV_FILES" value="" />
@@ -141,18 +139,18 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_complete_buy_notebook" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_complete_buy_notebook.test_buy_notebook" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WB" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_complete_buy_notebook&quot;" />
+      <option name="_new_target" value="&quot;test_complete_buy_notebook.test_buy_notebook&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -218,8 +216,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_complete_buy_notebook" />
+        <item itemvalue="Python tests.Python tests for test_complete_buy_notebook.test_buy_notebook" />
         <item itemvalue="Python tests.Python tests in test_complete_buy_notebook.py" />
+        <item itemvalue="Python.test_complete_buy_notebook" />
         <item itemvalue="Python tests.Python tests for test_complete_buy_notebook.test_click_notebook_block" />
         <item itemvalue="Python tests.Python tests for tests.etest_buy_several_products.TestBuySeveralProducts" />
       </list>
