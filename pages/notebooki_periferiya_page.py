@@ -13,10 +13,23 @@ class NotetbukiPeriferiyaPage(BasePage):
             self.page.locator(".product-card__wrapper").first.click()
 
 
-    """Проверит title продукта"""
-    def verify_product_title(self):
-        with allure.step("""Проверит title продукта"""):
-            expect(self.page.locator(".product-page__title")).to_be_visible()
+    # """Проверит title продукта"""
+    # def verify_product_title(self):
+    #     with allure.step("""Проверит title продукта"""):
+    #         expect(self.page.locator(".product-page__title")).to_be_visible()
+
+    def verify_page_title(self):
+        with allure.step("Проверка title страницы"):
+            title_locator = self.page.locator(".promo-category-page__title")
+            try:
+                title_locator.wait_for(state="visible", timeout=10000)
+                expect(title_locator).to_have_text("Ноутбуки и компьютеры")
+            except Exception as e:
+                # Вставка для CI отладки
+                self.page.screenshot(path="fail.png", full_page=True)
+                allure.attach.file("fail.png", name="Скриншот ошибки", attachment_type=allure.attachment_type.PNG)
+                allure.attach(self.page.content(), name="HTML страницы", attachment_type=allure.attachment_type.HTML)
+                raise e
 
     """Проверит price продукта"""
     def verify_product_price(self):
