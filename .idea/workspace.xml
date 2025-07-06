@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e90463bc-38cd-4ffe-9b42-f709d5bf3f3a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/buy_several_products_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/notebooki_periferiya_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_buy_several_products.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_complete_buy_notebook.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_complete_buy_notebook.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_complete_buy_notebook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_complete_buy_notebook.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +64,14 @@
     &quot;Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_complete_buy_notebook.TestBuyFlowNotebook.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_complete_buy_notebook.test_click_notebook_block.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_complete_buy_notebook.test_navigate.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.test_negative_test.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in ccc.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in rdtrf.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_add.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_complete_buy_notebook.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_delete.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_negativ_test.py.executor&quot;: &quot;Run&quot;,
     &quot;Python._add (1).executor&quot;: &quot;Run&quot;,
@@ -77,6 +82,7 @@
     &quot;Python.jjj.executor&quot;: &quot;Run&quot;,
     &quot;Python.jjjjj.executor&quot;: &quot;Run&quot;,
     &quot;Python.rdtrf.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_complete_buy_notebook.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/PycharmProjects/API_Test_Project&quot;,
@@ -90,8 +96,30 @@
       <recent name="C:\Users\PC\PycharmProjects\WB\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_complete_buy_notebook.TestBuyFlowNotebook">
-    <configuration name="Python tests for test_buy_several_products.TestBuySeveralProducts" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.test_complete_buy_notebook">
+    <configuration name="test_complete_buy_notebook" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="WB" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_complete_buy_notebook.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_complete_buy_notebook" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WB" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,11 +130,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_buy_several_products.TestBuySeveralProducts&quot;" />
+      <option name="_new_target" value="&quot;test_complete_buy_notebook&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_complete_buy_notebook.TestBuyFlowNotebook" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_complete_buy_notebook" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WB" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,11 +145,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_complete_buy_notebook.TestBuyFlowNotebook&quot;" />
+      <option name="_new_target" value="&quot;test_complete_buy_notebook&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_negativ_test.TestBuyProductNegativTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_complete_buy_notebook" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WB" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,7 +160,22 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_negativ_test.TestBuyProductNegativTest&quot;" />
+      <option name="_new_target" value="&quot;test_complete_buy_notebook&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_complete_buy_notebook.test_click_notebook_block" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="WB" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_complete_buy_notebook.test_click_notebook_block&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -166,7 +209,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.test_complete_buy_notebook.TestBuyFlowNotebook" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_complete_buy_notebook.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WB" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,17 +220,16 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_complete_buy_notebook.TestBuyFlowNotebook&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_complete_buy_notebook.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_complete_buy_notebook.TestBuyFlowNotebook" />
+        <item itemvalue="Python.test_complete_buy_notebook" />
+        <item itemvalue="Python tests.Python tests in test_complete_buy_notebook.py" />
+        <item itemvalue="Python tests.Python tests for test_complete_buy_notebook.test_click_notebook_block" />
         <item itemvalue="Python tests.Python tests for tests.etest_buy_several_products.TestBuySeveralProducts" />
-        <item itemvalue="Python tests.Python tests for tests.etest_buy_several_products.TestBuySeveralProducts" />
-        <item itemvalue="Python tests.Python tests for tests.test_complete_buy_notebook.TestBuyFlowNotebook" />
-        <item itemvalue="Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest" />
       </list>
     </recent_temporary>
   </component>
