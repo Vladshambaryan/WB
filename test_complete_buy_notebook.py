@@ -10,11 +10,11 @@ import tempfile
 
 @pytest.fixture()
 def driver():
-    options = Options()
+    # options = Options()
     # options.add_argument('--no-sandbox')
     # options.add_argument('--disable-dev-shm-usage')
     #options.add_argument("--headless")
-    driver = webdriver.Edge(options=options)
+    driver = webdriver.Edge()
     driver.maximize_window()
     driver.implicitly_wait(7)
     return driver
