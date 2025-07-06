@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e90463bc-38cd-4ffe-9b42-f709d5bf3f3a" name="Changes" comment="" />
+    <list default="true" id="e90463bc-38cd-4ffe-9b42-f709d5bf3f3a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_buy_several_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_buy_several_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_complete_buy_notebook.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_complete_buy_notebook.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,43 +50,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for ccc.test_open_account_page.executor": "Run",
-    "Python tests.Python tests for ccc.test_open_wildberries_logged_in.executor": "Run",
-    "Python tests.Python tests for conftest.test.executor": "Run",
-    "Python tests.Python tests for rdtrf.test.executor": "Run",
-    "Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.executor": "Run",
-    "Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products.executor": "Run",
-    "Python tests.Python tests for test_complete_buy_notebook.TestBuyFlowNotebook.executor": "Run",
-    "Python tests.Python tests for test_complete_buy_notebook.test_buy_notebook.executor": "Run",
-    "Python tests.Python tests for test_complete_buy_notebook.test_click_notebook_block.executor": "Run",
-    "Python tests.Python tests for test_complete_buy_notebook.test_navigate.executor": "Run",
-    "Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.executor": "Run",
-    "Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.test_negative_test.executor": "Run",
-    "Python tests.Python tests in ccc.py.executor": "Run",
-    "Python tests.Python tests in rdtrf.py.executor": "Run",
-    "Python tests.Python tests in test_add.py.executor": "Run",
-    "Python tests.Python tests in test_complete_buy_notebook.py.executor": "Run",
-    "Python tests.Python tests in test_delete.py.executor": "Run",
-    "Python tests.Python tests in test_negativ_test.py.executor": "Run",
-    "Python tests.pytest for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products.executor": "Run",
-    "Python tests.pytest for test_complete_buy_notebook.TestBuyFlowNotebook.executor": "Run",
-    "Python._add (1).executor": "Run",
-    "Python._add.executor": "Run",
-    "Python.conftest.executor": "Run",
-    "Python.delete (1).executor": "Run",
-    "Python.delete.executor": "Run",
-    "Python.jjj.executor": "Run",
-    "Python.jjjjj.executor": "Run",
-    "Python.rdtrf.executor": "Run",
-    "Python.test_complete_buy_notebook.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/PC/PycharmProjects/API_Test_Project",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for ccc.test_open_account_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for ccc.test_open_wildberries_logged_in.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for conftest.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for rdtrf.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_complete_buy_notebook.TestBuyFlowNotebook.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_complete_buy_notebook.test_buy_notebook.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_complete_buy_notebook.test_click_notebook_block.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_complete_buy_notebook.test_navigate.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_negativ_test.TestBuyProductNegativTest.test_negative_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in ccc.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in rdtrf.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_add.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_complete_buy_notebook.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_delete.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_negativ_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_complete_buy_notebook.TestBuyFlowNotebook.executor&quot;: &quot;Run&quot;,
+    &quot;Python._add (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python._add.executor&quot;: &quot;Run&quot;,
+    &quot;Python.conftest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.delete (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.delete.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jjj.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jjjjj.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rdtrf.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_complete_buy_notebook.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/PycharmProjects/API_Test_Project&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\PC\PycharmProjects\WB" />
@@ -90,17 +95,49 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest for test_complete_buy_notebook.TestBuyFlowNotebook">
+    <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="WB" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conftest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_buy_several_products.TestBuySeveralProducts" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WB" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="_new_additionalArguments" value="&quot;--headed&quot;" />
       <option name="_new_target" value="&quot;test_buy_several_products.TestBuySeveralProducts&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
@@ -135,21 +172,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in C:/Users/PC/PycharmProjects/WB/test_complete_buy_notebook.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="WB" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_complete_buy_notebook.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="WB" />
       <option name="ENV_FILES" value="" />
@@ -177,9 +199,19 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--headed&quot;" />
       <option name="_new_target" value="&quot;test_complete_buy_notebook.TestBuyFlowNotebook&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
@@ -188,9 +220,9 @@
       <list>
         <item itemvalue="Python tests.pytest for test_complete_buy_notebook.TestBuyFlowNotebook" />
         <item itemvalue="Python tests.Python tests for test_buy_several_products.TestBuySeveralProducts" />
+        <item itemvalue="Python.conftest" />
         <item itemvalue="Python tests.pytest for test_buy_several_products.TestBuySeveralProducts.test_buy_several_products" />
         <item itemvalue="Python tests.Python tests for test_complete_buy_notebook.test_buy_notebook" />
-        <item itemvalue="Python tests.Python tests in C:/Users/PC/PycharmProjects/WB/test_complete_buy_notebook.py" />
       </list>
     </recent_temporary>
   </component>
