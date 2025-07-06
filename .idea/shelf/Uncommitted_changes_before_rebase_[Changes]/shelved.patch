@@ -1,3 +1,0 @@
-diff --git a/conftest.py b/tests/conftest.py
-rename from conftest.py
-rename to tests/conftest.py
