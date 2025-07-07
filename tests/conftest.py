@@ -9,7 +9,7 @@ def browser():
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,
-            slow_mo=1 # Можно настроить скорость
+            slow_mo=1000 # Можно настроить скорость
         )
         yield browser
         browser.close()
