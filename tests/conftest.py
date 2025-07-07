@@ -30,5 +30,3 @@ def shop_url():
     return "https://www.wildberries.ru/catalog/elektronika/noutbuki-periferiya"
 
 
-
-
