@@ -23,7 +23,7 @@ class TestBuySeveralProducts:
         base_page.click_notebook_block()
         base_page.verify_page_title_notebook()
         # Шаг 3: Открыть страницу ноутбука. выбрать 3 товара и проверить сообщение о добавлении
-        buy_several_products_page.click_first_product()
+        buy_several_products_page.click_first_productt()
         notebuki_periferiya_page.verify_pop_up_message_add()
         buy_several_products_page.click_second_product()
         notebuki_periferiya_page.verify_pop_up_message_add()
